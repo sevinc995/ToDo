@@ -1,10 +1,6 @@
 "use strict";
 $(document).ready(function () {
 
-$('h1').click(function (e) {
-    e.preventDefault();
-    $('h1').html("HELLO");
-});
 
 $('.btn').click(function (e) {
     e.preventDefault();
@@ -15,7 +11,7 @@ $('.btn').click(function (e) {
         }
     }
 
-    a($('input').val())
+a($('input').val())
 
     
 });
