@@ -6,7 +6,7 @@ $('.btn').click(function (e) {
     
     let a = (a) => {
         if (!$.trim($("#inputme").val()) == ' ')
-            for (let i = a; i <=a; i++) {
+            for (let i = a; i <= a; i++) {
                 $('.col-md-12').append(`<div class="minibox"> <h1>${i}</h1> </div>`);
             }
 
