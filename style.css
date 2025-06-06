@@ -38,6 +38,14 @@ body {
   align-items: center;
 }
 
+@media (max-width: 310px) {
+  .box {
+    width: 250px;
+  }
+  .box input {
+    width: 180px;
+  }
+}
 .minibox {
   width: 200px;
   padding: 10px 20px;
