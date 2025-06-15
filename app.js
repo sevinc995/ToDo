@@ -5,12 +5,10 @@ $('.btn').click(function (e) {
     e.preventDefault();
     
     let a = (a) => {
-        if (!$.trim($("#inputme").val()) == ' ')
-            if (!Number($("#inputme").val()))
-                for (let i = a; i <= a; i++) {
-                    $('.col-md-12').append(`<div class="minibox"> <h1>${i}</h1> </div>`);
-                }
-
+        if (!isNaN ($("#inputme").val()) && !$.trim($("#inputme").val()) == ' ')
+            for (let i = a; i <= a; i++) {
+                $('.col-md-12').append(`<div class="minibox"> <h1>${i}</h1> </div>`);
+            }
     }
 
     a($('input').val())
