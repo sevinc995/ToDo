@@ -1,6 +1,25 @@
 "use strict";
 $(document).ready(function () {
 
+    $('.btn').click(function (e) {
+        e.preventDefault();
+
+        if (!isNaN ($("#inputme").val()) && !$.trim($('input').val()) == '') {
+            let a = b => {
+                for (let i = 0; i < b; i++) {
+                    $('.col-md-12').append(`<div class="minibox"> <h2>${b}</h2> </div>`) 
+                }
+            }
+            
+            a($('#inputme').val());
+        }
+       
+        // a($('input').val())
+        // f($('input').val())
+        $('#inputme').val('');
+       
+    })
+
 // $('.btn').click(function (e) {
 //     e.preventDefault();
     
@@ -16,21 +35,7 @@ $(document).ready(function () {
     
 // });
 
-    $('.btn').click(function (e) {
-        e.preventDefault();
-
-        if (!$.trim($('#inputme').val()) == '') {
-            let a = b => {
-                for (let i = 0; i < b; i++) {$('.minibox').append(`<h2>${b}</h2>`); }
-            }
-            // let v = f => !isNaN ($("#inputme").val()); {$('.minibox').append(`<h2>${b}</h2>`); }
-            // v($('#inputme').val());
-        }
-        // b($('input').val())
-        // f($('input').val())
-        $('#inputme').val('');
-       
-    });
+    
 
 
 
