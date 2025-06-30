@@ -10,7 +10,7 @@ $(document).ready(function () {
                     $('.col-md-12').append(`<div class="minibox"> <h2>${b}</h2> </div>`) 
                 }
             }
-            
+            let v = f  => 
             a($('#inputme').val());
         }
        
