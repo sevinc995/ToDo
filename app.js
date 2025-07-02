@@ -11,9 +11,9 @@ $(document).ready(function () {
                 }
             }
             let v = f  => 
-            v($('#inputme').val());
+            v($('input').val());
         }
-       
+        // v($('input').val());
         // a($('input').val())
         // f($('input').val())
         $('#inputme').val('');
