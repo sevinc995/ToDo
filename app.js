@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('.btn').click(function (e) {
         e.preventDefault();
 
-        if (!$.trim($('input').val()) == '') {
+        if (!isNaN ($("input").val()) && !$.trim($('input').val()) == '') {
             let a = b => {
                 for (let i = 0; i < b; i++) {
                     $('.col-md-12').append(`<div class="minibox"> <h2>${b}</h2> </div>`) 
@@ -13,9 +13,6 @@ $(document).ready(function () {
             let v = f  => 
             v($('input').val());
         }
-        // v($('input').val());
-        // a($('input').val())
-        // f($('input').val())
         $('#inputme').val('');
        
     })
